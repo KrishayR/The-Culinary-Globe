@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Culinary Globe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody&family=Dancing+Script&family=Montserrat:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a30f9b8509.js" crossorigin="anonymous"></script>
+    <script id="yelp-data" src=""></script>
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  </head>
+  <body>
+    <section id="section-1" class="fwh-slide">
+        <div class="container">
+          <video loop autoplay muted>
+              <source src="assets/video.webm" type="video/webm">
+              <source src="assets/video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="text-box">
+          <h1>F O O D</h1>
+        </div>
+        <div class="earth">
+          <div></div>
+        </div>
+        <div class="below">
+          <p>around the world</p>
+        </div>
+        <div id="scroll-down" class="scroll-demo">
+          <a href="#background"><span></span></a>
+        </div>
+    </section>
+
+    </section id="section-2" class="fwh-slide fwh-slide--bg-red">
+    <div id="background" class="search-container">
+      <h1 id="title" class="title">ASIA</h1>
+        <div class="dropdown">
+          <button class="btn">Select a Cuisine</button>
+          <div class="dropdown-content">
+            <a href="javascript: showChina()" class="option">Chinese</a>
+            <a href="javascript: showJapan()" class="option">Japanese</a>
+            <a href="javascript: showIndia()" class="option">Indian</a>
+            <a href="javascript: showThai()" class="option">Thai</a>
+            <a href="javascript: showVit()" class="option">Vietnamese</a>
+          </div>
+        </div>
+        <br><br>
+        <div id="all" style="display: inline; height: 100%; width: 100%;">
+          <p>Learn all about the different cuisines across Asia!</p>
+          <br>
+          <p>Tip: You can interact with these maps and discover more restaurants around the area.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38963666.37102083!2d57.54341625812512!3d45.256243935729586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3663f18a24cbe857%3A0xa9416bfcd3a0f459!2sAsia!5e0!3m2!1sen!2sus!4v1672782113451!5m2!1sen!2sus" width="60%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div id="china" style="display: inline; height: 100%; width: 100%;">
+          <p id="chinap" style="padding-right: 7%; padding-left: 7%; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Chinese cuisine is diverse and varies by region, with a wide range of flavors and ingredients. Chengdu, the food capital of China, is known for its spicy and flavorful Sichuan cuisine featuring chili peppers, Sichuan pepper, and local ingredients like bamboo shoots. </p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d219655.1805039682!2d104.0748591067052!3d30.65896901667941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1672782803105!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="jap" style="display: inline; height: 100%; width: 100%;">
+          <p id="japanp" style="padding-right: 7%; padding-left: 7%; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Japanese cuisine is known for its emphasis on fresh ingredients and flavors, with a strong focus on seafood, rice, and vegetables. Tokyo, the capital of Japan, is known for its diverse and highly regarded food scene, with a wide range of culinary styles and traditions represented in the city.</p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.27158507619!2d139.75747092191747!3d35.670314214437205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1672784703682!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="in" style="display: inline; height: 100%; width: 100%;">
+          <p id="indiap" style="padding-right: 7%; padding-left: 7%; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Indian cuisine varies greatly by region, with North Indian cuisine featuring a greater use of dairy products and spices like cardamom, cloves, and cinnamon, while South Indian cuisine is known for its use of coconut and tamarind and a greater variety of lentils and vegetables. Both North and South Indian cuisines are known for their vibrant and flavorful dishes, including a variety of curries, breads, and rice dishes.</p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d448140.5291247707!2d77.00983090876503!3d28.656787670257184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1672784906299!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="thai" style="display: inline; height: 100%; width: 100%;">
+          <p id="thaip" style="padding-right: 7%; padding-left: 7%; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Thai cuisine is known for its bold flavors, with a balance of spicy, sour, sweet, and salty tastes. Popular dishes from Thailand include green curry, pad Thai, and tom yum soup. Bangkok, the capital of Thailand, is renowned for its street food scene and has a wide variety of dishes to offer, from local specialties to international cuisine.</p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62010.284728437684!2d100.49280946659174!3d13.740063156619742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1672785181780!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="vit" style="display: inline; height: 100%; width: 100%;">
+          <p id="vitp" style="padding-right: 7%; padding-left: 7%; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Vietnamese cuisine is known for its fresh flavors and the use of herbs and vegetables, as well as its wide variety of noodle dishes. Popular dishes from Vietnam include pho, spring rolls, and banh mi sandwiches.</p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d41276.65340611889!2d108.33751624571194!3d15.886201547935332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sen!2sus!4v1672785387467!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </section>
+    <section id="section-3" class="fwh-slide fwh-slide--bg-red">
+      <div class="search-container" style="background:linear-gradient(#d56333, #000080);">
+        <h1 class="title">AFRICA</h1>
+        <main>
+          <div id="ground">
+            <div id="cheetah"></div>
+            <p id="ground-text" style="color: white;">As the cheetah gracefully runs through the savannah, its sleek movements mirroring the rolling hills and sweeping grasslands, it is a powerful reminder of the deep connections between the land and its people. In the same way that the cheetah is integral to the balance of the savannah ecosystem, African cuisine is deeply rooted in the culture and history of the continent. From the spicy stews of the savannah to the fragrant spices of the coast, the dishes of Africa are a celebration of the rich and varied ingredients that are found across the land. As the cheetah disappears over the horizon, it leaves behind a sense of awe and wonder, much like the way a satisfying meal from Africa can leave a lasting impression.</p>
+          </div>
+          <div id="forest"></div>
+          <div id="mountains-1"></div>
+          <div id="sun"></div>
+        </main>
+      </div>
+    </section>
+    
+    <section id="section-4" class="fwh-slide fwh-slide--bg-red">
+      <div class="search-container" style="background:linear-gradient(black, black, #003ea2, rgb(207, 45, 232)); padding-top: 10%;">
+        <br><br>
+        <div class="space">
+
+        </div>
+        <h1 style="color: white !important" class="title">Popular African Foods</h1>
+        
+        <section class="section">
+          <div class="grid">
+            <div class="item item--medium">
+              <div class="item__details">
+                Jollof rice: a West African dish made with rice, tomatoes, onions, and a variety of spices.
+              </div>
+            </div>
+            <div id="fufu" class="item item--medium">
+              <div class="item__details">
+                Fufu: a staple food in many parts of Africa, made from starchy root vegetables such as cassava, yams, or plantains that are pounded into a dough-like consistency.
+              </div>
+            </div>
+            <div id="suya" class="item item--medium">
+              <div class="item__details">
+                Suya: a spicy skewered meat dish that is popular in West Africa.
+              </div>
+            </div>
+        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-5" class="fwh-slide fwh-slide--bg-red">
+      <div class="europe-container">
+        
+        <h1 class="title" style="font-family: 'Dancing Script', cursive;">Europe</h1>
+        <div id="background-wrap">
+          <div class="x1">
+              <div class="cloud"></div>
+          </div>
+      
+          <div class="x2">
+              <div class="cloud"></div>
+          </div>
+      
+          <div class="x3">
+              <div class="cloud"></div>
+          </div>
+      
+          <div class="x4">
+              <div class="cloud"></div>
+          </div>
+      
+          <div class="x5">
+              <div class="cloud"></div>
+          </div>
+      </div>
+        <br>
+        <p style="padding-left: 20%; padding-right: 20%;">The cuisine of Europe is diverse and rich, with each country having its own unique culinary traditions and specialties. Some of the most well-known cuisines in Europe include Italian, with its pasta, pizza, and gelato; French, with its fine dining and pastries; Spanish, with its tapas and paella; and German, with its hearty sausages and pretzels. In addition to these cuisines, there are many other culinary traditions found throughout Europe, such as Greek, Hungarian, and Swedish cuisine. Food festivals and markets are also popular throughout the region, offering visitors the opportunity to sample local dishes and learn about the cultural and historical significance of different foods. Europe is also a major market for organic and sustainably-produced foods.</p>
+        <br>
+        <p style="color: black;">These are the 4 most popular cuisines in Europe.</p>
+        
+        <br>
+        <div class="card-grid">
+          <a class="card" href="#section-5">
+            <div class="card__background" style="background-image: url(https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886)"></div>
+            <div class="card__content">
+              <h3 class="card__heading">Italian Cuisine</h3>
+            </div>
+          </a>
+          <a class="card" href="#section-5">
+            <div class="card__background" style="background-image: url(https://www.kids-world-travel-guide.com/images/french_food_macarons_shutterstock_62967172-2.jpg)"></div>
+            <div class="card__content">
+              <h3 class="card__heading">French Cuisine</h3>
+            </div>
+          </a>
+          
+          <a class="card" href="#section-5">
+            <div class="card__background" style="background-image: url(https://insanelygoodrecipes.com/wp-content/uploads/2020/12/Spanish-Seafood-Paella.png)"></div>
+            <div class="card__content">
+              <h3 class="card__heading">Spanish Cuisine</h3>
+            </div>
+          </li>
+          <a class="card" href="#section-5">
+            <div class="card__background" style="background-image: url(https://www.expatica.com/app/uploads/sites/6/2014/05/bratwurst-sauerkraut.jpg)"></div>
+            <div class="card__content">
+              <h3 class="card__heading">German Cuisine</h3>
+            </div>
+          </a>
+        <div>
+        </div>
+    </section>
+    
+    <section id="section-6" class="fwh-slide fwh-slide--bg-red">
+      <div class="na-container">
+        <div class="birds-container">
+
+              
+          <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+          </div>
+          
+          <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+          </div>
+          
+          <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+          </div>
+          
+          <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+          </div>
+          
+        </div>
+
+        <h1 class="title" style="font-family: 'Montserrat', cursive;">North America</h1>
+        
+        <p style="padding-left: 10%; padding-right: 10%;">North American cuisine is a diverse and flavorful blend of influences from various cultures and regions. In the United States, the country's melting pot history has led to a wide range of dishes that reflect the country's diverse cultural heritage. Popular dishes in the United States include pizza, hamburgers, fried chicken, and Thanksgiving turkey. Canada's cuisine is also influenced by its diverse cultural heritage and includes dishes such as poutine, a dish made with fries, cheese curds, and gravy, and Nanaimo bars, a type of layered no-bake dessert. Mexican cuisine is also popular in North America, with dishes such as tacos, enchiladas, burritos, and fajitas being enjoyed in the United States and Canada. Overall, North American cuisine is a diverse and dynamic reflection of the continent's rich cultural history and influences.</p>
+        <br>
+        <div style="padding-left: 10%; padding-right: 10%;" class="grid">
+          <div id="apple" class="item item--medium">
+            <div class="item__details">
+              Apple pie - Apple pie is a classic dessert that is popular in the United States and is often served with a dollop of whipped cream or vanilla ice cream.
+            </div>
+          </div>
+          <div id="tt" class="item item--medium">
+            <div class="item__details">
+              Thanksgiving turkey - Roasted turkey is a traditional dish served at Thanksgiving dinners in the United States and Canada.
+            </div>
+          </div>
+          <div id="tacos" class="item item--medium">
+            <div class="item__details">
+              Tacos - Tacos are a staple of Mexican cuisine and can be filled with a variety of ingredients, such as meat, vegetables, and beans.
+            </div>
+          </div>
+            <br><br><br>
+            <div class="birds-container">
+
+              
+              <div class="bird-container bird-container--one">
+                <div class="bird bird--one"></div>
+              </div>
+              
+              <div class="bird-container bird-container--two">
+                <div class="bird bird--two"></div>
+              </div>
+              
+              <div class="bird-container bird-container--three">
+                <div class="bird bird--three"></div>
+              </div>
+              
+              <div class="bird-container bird-container--four">
+                <div class="bird bird--four"></div>
+              </div>
+              
+            </div>
+            
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+    </section>
+    <section id="section-7" class="fwh-slide fwh-slide--bg-red">
+      <div class="sa-container">
+        <h1 class="title" style="font-family: 'Anybody', cursive;">South America</h1>
+        <p style="color: green;">Play a quick game of snake w/ your arrow keys and enjoy looking at some mouthwatering pictures of south american cuisine!</p>
+        <p>Fun Fact: A 33-foot long Anaconda was once found in Brazil, South America.</p>
+        <div class="wrapper">
+          <div class="far"></div>
+          <div class="mid"></div>
+          <div class="near"></div>
+        </div>
+        <div style="width: 100%; text-align:center !important;  position: absolute; bottom: 3%; ">
+          <h4 style="color: white;">(Images and SVG's from Google)</h4>
+        </div>
+        <br>
+        <canvas style="float: right; margin-right: 5%;" id="stage" height="400" width="400"></canvas>
+        <div class="container-gal">
+
+
+          <div class="slider-wrapper">
+
+            <div class="inner-wrapper">
+              <div id="img1" class="slide"></div>
+              <div id="img2" class="slide"></div>
+              <div id="img3" class="slide"></div>
+              <div id="img4" class="slide"></div>
+              <div id="img5" class="slide"></div>
+            </div>
+
+          </div>
+
+          <div class="button prev"></div>
+          <div class="button next"></div>
+          <br>
+          <p style="padding-left: 10%; padding-right: 10%;">South American cuisine is known for its vibrant and flavorful dishes that reflect the diverse cultural influences of the region. Some popular dishes in South America include empanadas, feijoada, ceviche, arepas, and pão de queijo. Many South American dishes feature a variety of ingredients, such as beans, rice, meat, seafood, and a wide range of spices and seasonings, which contribute to the unique and flavorful character of the region's cuisine.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var element = document.getElementById("title");
+      $("#all").show();
+      $("#china").hide();
+      $("#jap").hide();
+      $("#in").hide();
+      $("#thai").hide();
+      $("#vit").hide();
+
+      function showChina(){
+        element.classList.remove("neonText");
+        document.getElementById('title').innerText = "China"
+        document.getElementById("title").style.color = '#f1ce7d';
+        document.getElementById("chinap").style.color = '#f1ce7d';
+        document.getElementById("background").style.background = '#cc3232';
+        $("#china").show();
+        $("#all").hide();
+        $("#jap").hide();
+        $("#in").hide();
+        $("#thai").hide();
+        $("#vit").hide();
+      }
+
+      function showJapan(){
+        document.getElementById('title').innerText = "Japan"
+        document.getElementById("title").style.color = 'black';
+        element.classList.add("neonText");
+        document.getElementById("japanp").style.color = 'white';
+        document.getElementById("japanp").style.fontFamily = "monospace";
+        document.getElementById("background").style.background = 'black';
+        $("#jap").show();
+        $("#all").hide();
+        $("#china").hide();
+        $("#in").hide();
+        $("#thai").hide();
+        $("#vit").hide();
+      }
+
+      function showIndia(){
+        element.classList.remove("neonText");
+        document.getElementById('title').innerText = "India"
+        document.getElementById("title").style.color = 'Orange';
+        document.getElementById("indiap").style.color = 'Green';
+        document.getElementById("background").style.background = 'white';
+        $("#in").show();
+        $("#all").hide();
+        $("#china").hide();
+        $("#jap").hide();
+        $("#thai").hide();
+        $("#vit").hide();
+      }
+      function showThai(){
+        element.classList.remove("neonText");
+        document.getElementById('title').innerText = "Thailand"
+        document.getElementById("title").style.color = '#e74242';
+        document.getElementById("thaip").style.color = '#494947';
+        document.getElementById("background").style.background = '#ffc86d';
+        $("#thai").show();
+        $("#all").hide();
+        $("#china").hide();
+        $("#in").hide();
+        $("#jap").hide();
+        $("#vit").hide();
+      }
+
+      function showVit(){
+        element.classList.remove("neonText");
+        document.getElementById('title').innerText = "Vietnam"
+        document.getElementById("title").style.color = '#dd8358';
+        document.getElementById("vitp").style.color = '#4a6156';
+        document.getElementById("background").style.background = '#dbc4ad';
+        $("#vit").show();
+        $("#all").hide();
+        $("#china").hide();
+        $("#in").hide();
+        $("#thai").hide();
+        $("#jap").hide();
+      }
+    </script>
+	<script src="js/index.js"></script>
+  </body>
+</html>
